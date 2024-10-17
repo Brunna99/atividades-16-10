@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exibir Alerta com o Nome do Usuário</title>
+</head>
+
+<body>
+  <h1>Exibir Alerta com o Nome do Usuário</h1>
+  <button id="alert">Modificar Texto</button>
+</body>
+<script>
+  let botao = document.getElementById("alert");
+
+  botao.addEventListener("click", function () {
+    let nome = prompt("Informe seu nome.");
+    if (nome) {
+      alert(`Olá, ${nome}`);
+    } else {
+      alert("Nome não fornecido.");
+    }
+  });
+
+
+
+</script>
+
+</html>
